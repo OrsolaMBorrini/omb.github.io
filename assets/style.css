@@ -12,7 +12,7 @@ a {
     text-decoration: none;
 }
 
-a:hover:not(.card-subtext a) :not(#cv-button) :not(#projects-button){
+a:hover:not(.card-subtext a):not(#cv-button):not(#projects-button){
     color: #43655A;
     text-decoration: none;
     font-weight: bold;
