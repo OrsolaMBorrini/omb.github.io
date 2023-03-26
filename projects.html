@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
         rel="stylesheet">
+
 </head>
 
 
@@ -30,7 +31,8 @@
             <div class="col-md-4 div-txt-normal">
                 <ul class="soc-up">
                     <li>
-                        <a class="icon-13 github" href="https://github.com/OrsolaMBorrini" target="_blank" title="GitHub">
+                        <a class="icon-13 github" href="https://github.com/OrsolaMBorrini" target="_blank"
+                            title="GitHub">
                             <div class="ir">
                                 <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="512" height="512">
                                     <path
@@ -41,7 +43,8 @@
                         </a>
                     </li>
                     <li>
-                        <a class="icon-17 linkedin" href="https://www.linkedin.com/in/orsola-maria-borrini-362142253/" target="_blank" title="LinkedIn">
+                        <a class="icon-17 linkedin" href="https://www.linkedin.com/in/orsola-maria-borrini-362142253/"
+                            target="_blank" title="LinkedIn">
                             <div class="ir">
                                 <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="512" height="512">
                                     <path
@@ -65,7 +68,7 @@
                                     </path>
                                 </svg>-->
                                 <!-- M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z -->
-                                
+
                             </div>
                         </a>
                     </li>
@@ -83,54 +86,94 @@
             </div>
             <div class="col-md-3"></div>
             <div class="col-md-2 div-btn">
-                <a id="projects-button" type="button" class="btn btn-projects btn-outline-primary" href="https://github.com/OrsolaMBorrini/PersonalPortfolio" target="_blank">Full Study Plan</a>
+                <a id="projects-button" type="button" class="btn btn-projects btn-outline-primary"
+                    href="https://github.com/OrsolaMBorrini/PersonalPortfolio" target="_blank">Full Study Plan</a>
+            </div>
+            <!-- Control buttons -->
+            <div id="myBtnContainer">
+                <button class="btn btn-filters btn-outline-primary active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('sparql')">#sparql</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('infviz')">#information visualization</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('lod')">#lod</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('network')">#network analysis</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('spatial')">#spatial analysis</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('tei')">#tei</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('nlp')">#nlp</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('webscrap')">#web scraping</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('ontologies')">#ontology modelling</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('ai')">#ai</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('hocr')">#h/ocr</button>
+
             </div>
         </div>
-        
-        
         <!-- <h4>Academic Year 2021-2022</h4> -->
         <div class="row row-cols-1 row-cols-md-4 g-4 projects-group">
 
             <!-- Project Item -->
-            <div class="col">
+            <div class="col filterDiv sparql infviz nlp webscrap">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">Gaze Project [temporary name]</h5>
-                        <p class="card-text">A data visualization project researching the impact of the "male gaze" on Western cinematic industry by analysing the 10 highest-grossing U.S.A. films for each decade from 1940s to 2010s. The data for this project has been extracted through three different methods: webscraping, script analysis (NLP), and SPARQL queries. Finally, the results are shared through a variety of visualizations. 
+                        <p class="card-text">A data visualization project researching the impact of the "male gaze"
+                            on
+                            Western cinematic industry by analysing the 10 highest-grossing U.S.A. films for each
+                            decade
+                            from 1940s to 2010s. The data for this project has been extracted through three
+                            different
+                            methods: webscraping, script analysis (NLP), and SPARQL queries. Finally, the results
+                            are
+                            shared through a variety of visualizations.
                         <p class="card-subtext">
                             Professor(s): M. Daquino<br>
                             <a href="" target="_blank"><b>Website</b></a><br>
                             Issue date: [tbd]
                         </p>
-                    </div>
-                </div>
-            </div><!-- End Project Item -->
-            
-            <!-- Project Item -->
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Blessed Be the Fruit</h5>
-                        <p class="card-text">Open data project regarding the analysis of factors that might influence
-                            pregnancy rates in young women in Italy, specifically religious observance in the general
-                            population and the education level in young women.
-                            The research encompasses in-depth analyses regarding quality, legalty, ethics, and technicalities of the open data employed, and different visualizations support the communication of the results.
-                        </p>
-                        <p class="card-subtext">
-                            Professor(s): M. Palmirani<br>
-                            <a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank"><b>Website</b></a><br>
-                            Issue date: February 2023
-                        </p>
+                        <span class="badge">#information visualization</span>
+                        <span class="badge">#nlp</span>
+                        <span class="badge">#web scraping</span>
+                        <span class="badge">#sparql</span>
                     </div>
                 </div>
             </div><!-- End Project Item -->
 
             <!-- Project Item -->
-            <div class="col">
+            <div class="col filterDiv lod infviz">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Blessed Be the Fruit</h5>
+                        <p class="card-text">Open data project regarding the analysis of factors that might
+                            influence
+                            pregnancy rates in young women in Italy, specifically religious observance in the
+                            general
+                            population and the education level in young women.
+                            The research encompasses in-depth analyses regarding quality, legalty, ethics, and
+                            technicalities of the open data employed, and different visualizations support the
+                            communication of the results.
+                        </p>
+                        <p class="card-subtext">
+                            Professor(s): M. Palmirani<br>
+                            <a href="https://orsolamborrini.github.io/blessedfruit/"
+                                target="_blank"><b>Website</b></a><br>
+                            Issue date: February 2023
+                        </p>
+                        <span class="badge">#lod</span>
+                        <span class="badge">#information visualization</span>
+                    </div>
+                </div>
+            </div><!-- End Project Item -->
+
+            <!-- Project Item -->
+            <div class="col filterDiv ai hocr">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">Computing Melville</h5>
-                        <p class="card-text">Small-scale annotation campaign carried out using Transkribus. The aim of the project is to develop a Machine Learning model able to perform an automated transcription task (HTR) on a collection of Herman Melville's handwritten manuscripts: his last novella, "Billy Budd", left unfinished in 1891, and "Rip Van Winkle's Lilac", an experimental combination of prose and poetry.
+                        <p class="card-text">Small-scale annotation campaign carried out using Transkribus. The aim
+                            of
+                            the project is to develop a Machine Learning model able to perform an automated
+                            transcription task (HTR) on a collection of Herman Melville's handwritten manuscripts:
+                            his
+                            last novella, "Billy Budd", left unfinished in 1891, and "Rip Van Winkle's Lilac", an
+                            experimental combination of prose and poetry.
                         </p>
                         <p class="card-subtext">
                             Professor(s): G. Colavizza<br>
@@ -138,71 +181,96 @@
                                 target="_blank"><b>Website</b></a><br>
                             Issue date: November 2022
                         </p>
+                        <span class="badge">#h/ocr</span>
+                        <span class="badge">#ai</span>
+                        <span class="badge">#layout parsing</span>
                     </div>
                 </div>
             </div><!-- End Project Item -->
 
             <!-- Project Item -->
-            <div class="col">
+            <div class="col filterDiv ontologies">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">KRoePiUS</h5>
                         <p class="card-text">Knowledge representation and extraction project on the theoretical
-                            reflection beneath the Bauhaus. Specifically, it compares "Theory and Organization of the
+                            reflection beneath the Bauhaus. Specifically, it compares "Theory and Organization of
+                            the
                             Bauhaus" by Gropius with the "Arbeitsrat fuer Kunst' in Berlin" manifesto by Taut,
-                            representing both as ontologies and developing a third ontology as alignment, to be analysed through SPARQL queries.
+                            representing both as ontologies and developing a third ontology as alignment, to be
+                            analysed
+                            through SPARQL queries.
                         </p>
                         <p class="card-subtext">
                             Professor(s): A. Gangemi, A.G. Nuzzolese<br>
                             <a href="https://digimof.github.io/keGropius/" target="_blank"><b>Website</b></a><br>
                             Issue date: August 2022
                         </p>
+                        <span class="badge">#knowledge representation</span>
+                        <span class="badge">#ontology modelling</span>
                     </div>
                 </div>
             </div><!-- End Project Item -->
 
             <!-- Project  Item -->
-            <div class="col">
+            <div class="col filterDiv network spatial tei lod">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">Changing Lenses</h5>
-                        <p class="card-text">Multi-level textual analysis of the novel "Gli occhiali d'oro" by Giorgio
-                            Bassani. The main goal of the project is the analysis of the margin from a narrative, geo-spatial and relational perspective, using specific tools and softwares: a Semantic Digital Edition (LOD-enhanced TEI model), Leaflet and Gephi.
+                        <p class="card-text">Multi-level textual analysis of the novel "Gli occhiali d'oro" by
+                            Giorgio
+                            Bassani. The main goal of the project is the analysis of the margin from a narrative,
+                            geo-spatial and relational perspective, using specific tools and softwares: a Semantic
+                            Digital Edition (LOD-enhanced TEI model), Leaflet and Gephi.
                         </p>
                         <p class="card-subtext">
                             Professor(s): T. Mancinelli<br>
                             <a href="https://digimof.github.io/gbggold/" target="_blank"><b>Website</b></a><br>
                             Issue date: July 2022
                         </p>
+                        <span class="badge">#lod</span>
+                        <span class="badge">#TEI</span>
+                        <span class="badge">#spatial analysis</span>
+                        <span class="badge">#network analysis</span>
                     </div>
                 </div>
             </div><!-- End Project Item -->
 
             <!-- Project Item -->
-            <div class="col">
+            <div class="col filterDiv ">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">Dead Lovers Society</h5>
-                        <p class="card-text">A metadata-enriched and stylistically customizable magazine on tragic love
-                            stories centered on many heroines of the past, from Medea to Guinevere. The implied readers of this magazine are diversified, as its issues can be read with different purposes: from the most naive passion for reading to an interest in interlinguistic comparison.
+                        <p class="card-text">A metadata-enriched and stylistically customizable magazine on tragic
+                            love
+                            stories centered on many heroines of the past, from Medea to Guinevere. The implied
+                            readers
+                            of this magazine are diversified, as its issues can be read with different purposes:
+                            from
+                            the most naive passion for reading to an interest in interlinguistic comparison.
                         </p>
                         <p class="card-subtext">
                             Professor(s): F. Vitali<br>
                             <a href="https://deadloversociety.github.io/imwt22/" target="_blank"><b>Website</b></a><br>
                             Issue date: July 2022
                         </p>
+                        <span class="badge">#ux design</span>
+                        <span class="badge">#css</span>
+                        <span class="badge">#html</span>
+                        <span class="badge">#javascript</span>
                     </div>
                 </div>
             </div><!-- End Project Item -->
 
             <!-- Project Item -->
-            <div class="col">
+            <div class="col filterDiv ">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">WanderLOST</h5>
                         <p class="card-text">Single-user VR on-site application within Palazzo Poggi Museum's
                             permanent exhibition "Chamber of Geography and Nautics", based on the idea of
-                            travelling on the ancient maps displayed in the museum and witnessing the results of climate
+                            travelling on the ancient maps displayed in the museum and witnessing the results of
+                            climate
                             change in different locations across the world.
                         </p>
                         <p class="card-subtext">
@@ -211,61 +279,69 @@
                                 target="_blank"><b>Design brief</b></a><br>
                             Issue date: May 2022
                         </p>
+                        <span class="badge">#vr</span>
+                        <span class="badge">#museology</span>
+                        <span class="badge">#interaction media design</span>
                     </div>
                 </div>
             </div><!-- End Project Item -->
 
             <!-- Project Item -->
-            <div class="col">
+            <div class="col filterDiv lod">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">ALOD Turing</h5>
                         <p class="card-text">
                             Linked Open Data project shedding light on Alan Turing's work and legacy
                             through various concepts, items, people, places, and events connected to the brilliant
-                            mathematician, who has been celebrated and remembered mainly in the last few decades after a long period of silence.
+                            mathematician, who has been celebrated and remembered mainly in the last few decades
+                            after a
+                            long period of silence.
                         </p>
                         <p class="card-subtext">
                             Professor(s): F. Tomasi<br>
                             <a href="https://amt-legacy.github.io/ALODTuring/" target="_blank"><b>Website</b></a><br>
                             Issue date: April 2022
                         </p>
+                        <span class="badge">#ontologies</span>
+                        <span class="badge">#lod</span>
                     </div>
                 </div>
             </div><!-- End Project Item -->
-            
+
             <!-- <div class="col">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Name</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <p class="card-subtext">
-                            Professor(s): G. Colavizza<br>
-                            <a href="https://orsolamborrini.github.io/ComputingMelville/" target="_blank">Website</a><br>
-                            Issue date: November 2022
-                        </p>
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Name</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <p class="card-subtext">
+                                Professor(s): O. Borrini<br>
+                                <a href="" target="_blank">Website</a><br>
+                                Issue date: Month Year
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Name</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <p class="card-subtext">
-                            Professor(s): G. Colavizza<br>
-                            <a href="https://orsolamborrini.github.io/ComputingMelville/" target="_blank">Website</a><br>
-                            Issue date: November 2022
-                        </p>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Name</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <p class="card-subtext">
+                                Professor(s): O. Borrini<br>
+                                <a href="" target="_blank">Website</a><br>
+                                Issue date: Month Year
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div> -->
+                </div> -->
+        </div>
         </div>
         <!-- Personal projects -->
         <!-- <h2>Personal Projects</h2>
@@ -341,6 +417,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+
 </body>
 
 </html>

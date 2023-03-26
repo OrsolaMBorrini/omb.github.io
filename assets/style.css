@@ -12,7 +12,7 @@ a {
     text-decoration: none;
 }
 
-a:hover:not(.card-subtext a):not(#cv-button):not(#projects-button):not(.fixed-bottom){
+a:hover:not(.card-subtext a):not(#cv-button):not(#projects-button):not(.fixed-bottom) {
     color: #43655A;
     text-decoration: none;
     font-weight: bold;
@@ -354,7 +354,35 @@ PROJECTS.HTML
 }
 
 
+/* Filtering */
 
+.btn-filters {
+    margin-bottom: 0.5em;
+}
+
+.myBtnContainer {
+    align-items: center;
+}
+
+.filterDiv {
+    display: none;
+    /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+.badge {
+    background-color: #43655A;
+    border-radius: 0.2em;
+}
+
+.card-body:hover span {
+    color: #43655A;
+    background-color: #F5F5F5;
+}
 
 /* ---------------------------------------------------------
 ABOUT.HTML 
