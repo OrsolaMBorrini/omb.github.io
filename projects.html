@@ -92,17 +92,29 @@
             <!-- Control buttons -->
             <div id="myBtnContainer">
                 <button class="btn btn-filters btn-outline-primary active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('ch')">#cultural heritage</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('opendata')">#open data</button>
                 <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('sparql')">#sparql</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('ml')">#machine learning</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('html')">#html</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('css')">#css</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('js')">#js</button>
                 <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('infviz')">#information visualization</button>
                 <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('lod')">#lod</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('ux')">#ux</button>
                 <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('network')">#network analysis</button>
-                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('spatial')">#spatial analysis</button>
-                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('tei')">#tei</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('knowman')">#knowledge management</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('knowrep')">#knowledge representation</button>
                 <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('nlp')">#nlp</button>
-                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('webscrap')">#web scraping</button>
-                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('ontologies')">#ontology modelling</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('spatial')">#spatial analysis</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('intermediades')">#interaction media design</button>
                 <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('ai')">#ai</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('sed')">#semantic digital edition</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('virtreal')">#vr</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('webscrap')">#webscraping</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('ontology')">#ontology</button>
                 <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('hocr')">#h/ocr</button>
+                <button class="btn btn-filters btn-outline-primary" onclick="filterSelection('museology')">#museology</button>
 
             </div>
         </div>
@@ -110,10 +122,10 @@
         <div class="row row-cols-1 row-cols-md-4 g-4 projects-group">
 
             <!-- Project Item -->
-            <div class="col filterDiv sparql infviz nlp webscrap">
+            <div class="col filterDiv infviz nlp webscrap sparql">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Gaze Project [temporary name]</h5>
+                        <h5 class="card-title">Through the Gaze</h5>
                         <p class="card-text">A data visualization project researching the impact of the "male gaze"
                             on
                             Western cinematic industry by analysing the 10 highest-grossing U.S.A. films for each
@@ -125,19 +137,19 @@
                             shared through a variety of visualizations.
                         <p class="card-subtext">
                             Professor(s): M. Daquino<br>
-                            <a href="" target="_blank"><b>Website</b></a><br>
-                            Issue date: [tbd]
+                            <a href="https://ahsanv101.github.io/ProjectGaze/" target="_blank"><b>Website</b></a><br>
+                            Issue date: april 2023
                         </p>
                         <span class="badge">#information visualization</span>
                         <span class="badge">#nlp</span>
-                        <span class="badge">#web scraping</span>
+                        <span class="badge">#webscraping</span>
                         <span class="badge">#sparql</span>
                     </div>
                 </div>
             </div><!-- End Project Item -->
 
             <!-- Project Item -->
-            <div class="col filterDiv lod infviz">
+            <div class="col filterDiv lod infviz opendata">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">Blessed Be the Fruit</h5>
@@ -158,12 +170,14 @@
                         </p>
                         <span class="badge">#lod</span>
                         <span class="badge">#information visualization</span>
+                        <span class="badge">#open data</span>
+
                     </div>
                 </div>
             </div><!-- End Project Item -->
 
             <!-- Project Item -->
-            <div class="col filterDiv ai hocr">
+            <div class="col filterDiv ai hocr ml">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">Computing Melville</h5>
@@ -183,13 +197,13 @@
                         </p>
                         <span class="badge">#h/ocr</span>
                         <span class="badge">#ai</span>
-                        <span class="badge">#layout parsing</span>
+                        <span class="badge">#machine learning</span>
                     </div>
                 </div>
             </div><!-- End Project Item -->
 
             <!-- Project Item -->
-            <div class="col filterDiv ontologies">
+            <div class="col filterDiv ontology knowman knowrep sparql">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">KRoePiUS</h5>
@@ -206,14 +220,17 @@
                             <a href="https://digimof.github.io/keGropius/" target="_blank"><b>Website</b></a><br>
                             Issue date: August 2022
                         </p>
+                        <span class="badge">#ontology</span>
+                        <span class="badge">#knowledge management</span>
                         <span class="badge">#knowledge representation</span>
-                        <span class="badge">#ontology modelling</span>
+                        <span class="badge">#sparql</span>
+
                     </div>
                 </div>
             </div><!-- End Project Item -->
 
             <!-- Project  Item -->
-            <div class="col filterDiv network spatial tei lod">
+            <div class="col filterDiv network spatial sed lod">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">Changing Lenses</h5>
@@ -229,7 +246,7 @@
                             Issue date: July 2022
                         </p>
                         <span class="badge">#lod</span>
-                        <span class="badge">#TEI</span>
+                        <span class="badge">#semantic digital edition</span>
                         <span class="badge">#spatial analysis</span>
                         <span class="badge">#network analysis</span>
                     </div>
@@ -237,7 +254,7 @@
             </div><!-- End Project Item -->
 
             <!-- Project Item -->
-            <div class="col filterDiv ">
+            <div class="col filterDiv ux css html js">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">Dead Lovers Society</h5>
@@ -263,7 +280,7 @@
             </div><!-- End Project Item -->
 
             <!-- Project Item -->
-            <div class="col filterDiv ">
+            <div class="col filterDiv virtreal ch intermediades museology">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">WanderLOST</h5>
@@ -280,6 +297,7 @@
                             Issue date: May 2022
                         </p>
                         <span class="badge">#vr</span>
+                        <span class="badge">#cultural heritage</span>
                         <span class="badge">#museology</span>
                         <span class="badge">#interaction media design</span>
                     </div>
@@ -287,7 +305,7 @@
             </div><!-- End Project Item -->
 
             <!-- Project Item -->
-            <div class="col filterDiv lod">
+            <div class="col filterDiv ontology lod knowman">
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">ALOD Turing</h5>
@@ -303,8 +321,9 @@
                             <a href="https://amt-legacy.github.io/ALODTuring/" target="_blank"><b>Website</b></a><br>
                             Issue date: April 2022
                         </p>
-                        <span class="badge">#ontologies</span>
+                        <span class="badge">#ontology</span>
                         <span class="badge">#lod</span>
+                        <span class="badge">#knowledge management</span>
                     </div>
                 </div>
             </div><!-- End Project Item -->
