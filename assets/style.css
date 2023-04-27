@@ -362,6 +362,11 @@ PROJECTS.HTML
 
 .myBtnContainer {
     align-items: center;
+    padding-top: 0.3em;
+}
+
+button.btn.btn-filters.btn-outline-primary {
+    border-radius: 1rem;
 }
 
 .filterDiv {
