@@ -5,6 +5,7 @@ GENERAL STYLE
 body {
     background: #F5F5F5;
     font-family: 'Nanum Gothic Coding', monospace;
+    max-height: 100vh;
 }
 
 a {
@@ -19,8 +20,8 @@ a:hover:not(.card-subtext a):not(#cv-button):not(#projects-button):not(.fixed-bo
 }
 
 .sect {
-    padding: 6% 12% 1% 12%;
-    min-height: 100vh;
+    padding: 5% 12% 5% 12%;
+    max-height: 100vh;
 }
 
 h1 {
@@ -28,6 +29,7 @@ h1 {
     line-height: 1em;
     align-self: flex-start;
     position: relative;
+    letter-spacing: -0.02em;
 }
 
 h2 {
@@ -53,7 +55,9 @@ h5 {
     margin: 0;
 }
 
-
+p {
+    letter-spacing: -0.02em;
+}
 
 
 /* ---------------------------------------------------------
@@ -78,7 +82,7 @@ INDEX.HTML
     display: block;
     width: 245%;
     height: 1px;
-    top: 18.6em;
+    top: 17em;
     right: 125%;
     background-color: black;
 }
@@ -100,7 +104,7 @@ INDEX.HTML
     display: block;
     width: 1px;
     height: 46vh;
-    top: -3em;
+    top: -5em;
     left: 0.33em;
     background-color: black;
 }
@@ -166,8 +170,8 @@ INDEX.HTML
     text-align: center;
     /* width: 174rem; */
     max-width: 100%;
-    bottom: 3.3rem;
-    right: 12.5rem;
+    bottom: 6%;
+    right: 13%;
 }
 
 .soc li {
@@ -236,8 +240,8 @@ PROJECTS.HTML
     text-align: center;
     /* width: 174rem; */
     max-width: 100%;
-    top: 6rem;
-    right: 12.3rem;
+    top: 10%;
+    right: 12.3%;
 }
 
 .soc-up li {
